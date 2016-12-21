@@ -27,7 +27,9 @@ typedef NS_ENUM(NSInteger,TJNavigationBarShapeTypeMode){
  */
 
 
-- (void)navigationBarBackGroundColor:(UIColor *)backGroundColor titleTextAttribute:(NSDictionary *)attributeDictionary withNavigationBarShapeTypeMode:(TJNavigationBarShapeTypeMode)barShapeTypeMode;
+- (void)navigationBarBackGroundColor:(UIColor *)backGroundColor 
+titleTextAttribute:(NSDictionary *)attributeDictionary 
+withNavigationBarShapeTypeMode:(TJNavigationBarShapeTypeMode)barShapeTypeMode;
 
 
 /**
