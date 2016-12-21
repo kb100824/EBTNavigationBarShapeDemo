@@ -26,6 +26,7 @@ typedef NS_ENUM(NSInteger,TJNavigationBarShapeTypeMode){
  * barShapeTypeMode  //导航栏形状样式
  */
 
+
 - (void)navigationBarBackGroundColor:(UIColor *)backGroundColor titleTextAttribute:(NSDictionary *)attributeDictionary withNavigationBarShapeTypeMode:(TJNavigationBarShapeTypeMode)barShapeTypeMode;
 
 
@@ -34,6 +35,7 @@ typedef NS_ENUM(NSInteger,TJNavigationBarShapeTypeMode){
    移除动画
 
  */
+
 
 - (void)stopRemoveShapelayerAnimation;
 
