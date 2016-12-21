@@ -24,11 +24,15 @@ typedef NS_ENUM(NSInteger,TJNavigationBarShapeTypeMode){
  * attributeDictionary 导航栏字体设置
 
  * barShapeTypeMode  //导航栏形状样式
+
  */
 
 
+
 - (void)navigationBarBackGroundColor:(UIColor *)backGroundColor 
+
 titleTextAttribute:(NSDictionary *)attributeDictionary 
+
 withNavigationBarShapeTypeMode:(TJNavigationBarShapeTypeMode)barShapeTypeMode;
 
 
