@@ -77,7 +77,7 @@ static NSString *const KZigZigShaperLayer_StrokeEnd = @"ZigZigShaperLayer_Stroke
     [self setBarTintColor:!backGroundColor?kNavBackgroundColor:backGroundColor];
     
     //去掉黑线
-    [self setBackgroundImage:[self imageWithColor:!backGroundColor?kNavBackgroundColor:backGroundColor]
+    [self setBackgroundImage:imageWithColor(!backGroundColor?kNavBackgroundColor:backGroundColor)
                                       forBarPosition:UIBarPositionAny
                                           barMetrics:UIBarMetricsDefault];
     
@@ -100,8 +100,7 @@ static NSString *const KZigZigShaperLayer_StrokeEnd = @"ZigZigShaperLayer_Stroke
     
 
 }
-- (UIImage *)imageWithColor:(UIColor *)color
-{
+static inline UIImage* imageWithColor(UIColor * color){
     CGRect rect = CGRectMake(0, 0, 1, 1);
     UIGraphicsBeginImageContext(rect.size);
     CGContextRef context = UIGraphicsGetCurrentContext();
@@ -113,7 +112,22 @@ static NSString *const KZigZigShaperLayer_StrokeEnd = @"ZigZigShaperLayer_Stroke
     UIGraphicsEndImageContext();
     
     return image;
+
 }
+//- (UIImage *)imageWithColor:(UIColor *)color
+//{
+//    CGRect rect = CGRectMake(0, 0, 1, 1);
+//    UIGraphicsBeginImageContext(rect.size);
+//    CGContextRef context = UIGraphicsGetCurrentContext();
+//    
+//    CGContextSetFillColorWithColor(context, [color CGColor]);
+//    CGContextFillRect(context, rect);
+//    
+//    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
+//    UIGraphicsEndImageContext();
+//    
+//    return image;
+//}
 
 //水波曲线
 - (void)navigationWaveShapeColor:(UIColor *)waveColor{
