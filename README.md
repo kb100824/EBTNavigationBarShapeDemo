@@ -28,13 +28,13 @@ typedef NS_ENUM(NSInteger,TJNavigationBarShapeTypeMode){
  */
 
 
-
+<p>
 - (void)navigationBarBackGroundColor:(UIColor *)backGroundColor 
 
 titleTextAttribute:(NSDictionary *)attributeDictionary 
 
 withNavigationBarShapeTypeMode:(TJNavigationBarShapeTypeMode)barShapeTypeMode;
-
+</p>
 
 /**
 
@@ -42,9 +42,9 @@ withNavigationBarShapeTypeMode:(TJNavigationBarShapeTypeMode)barShapeTypeMode;
 
  */
 
-
+<p>
 - (void)stopRemoveShapelayerAnimation;
-
+</p>
 
 
 #水波形状导航栏效果图 barShapeTypeMode = TJNavigationBarShapeTypeMode_Wave
