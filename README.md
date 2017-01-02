@@ -1,7 +1,9 @@
 
 #给导航栏添加自定义(水波 锯齿 弧线)的形状支持动画效果
 
-#需要项目中的文件名称为"UINavigationBar+TJ_NavigationShape"的类别文件添加到项目中并引用一下。
+#使用pod指令把该类库添加到项目中
+
+pod 'EBTUINavigationBarShape', '~> 1.0.0'
 
 #导航栏样式目前只有三种如枚举中所示:
 
