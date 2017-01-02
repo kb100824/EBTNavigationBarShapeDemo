@@ -3,7 +3,7 @@
 
 #使用pod指令把该类库添加到项目中
 
-pod 'EBTUINavigationBarShape', '~> 1.0.0'
+<p>pod 'EBTUINavigationBarShape', '~> 1.0.0'</p>
 
 #导航栏样式目前只有三种如枚举中所示:
 
